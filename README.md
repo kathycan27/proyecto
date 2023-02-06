@@ -1,5 +1,15 @@
 Presentación del login de inicio:
-
+Componentes usados:
+JMENUBAR:
+JMENU
+JPANEL
+JSPINNER
+JSPLIT
+JFILECHOSER
+JLABEL
+JTEXT
+JRADDIOBUTTON
+JBUTTON
 
 ![image](https://user-images.githubusercontent.com/96399138/216997506-c5ef40dc-d4a0-4426-8c5a-60edda0c330b.png)
 
