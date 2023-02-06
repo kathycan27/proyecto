@@ -1,5 +1,7 @@
 
-<h3> Componentes usados: </h3></br>
+<h2> Componentes utilizados para el desarrollo: </h2></br>
+JTextFiel: Componente utilizado para ingresar el nombre del usuario </br>
+JPasswordField: Este componente es utilizado para ingresar la contraseña del usuario </br>
 JMENUBAR:nos permite crear una barra e donde colocaremos el menu </br>
 JMENU: nos permite agregar las opciones o el menu como botones indiciduales</br>
 JPANEL: es donde se crea todo el proyecto ya que sin este no podriamos mostrar ninguno de los elementos que esten encima</br>
@@ -13,22 +15,25 @@ JBUTTON: nos permite que al presionar sobre el crear algun uso o funcionalidad c
 JPASS: nos permite hashiar las claves o que lo que el usuario ingrese no se observe</br>
 
 <hr/>
-Presentación del login de inicio:
+<h3>Presentación del login de inicio:</h3>
 
 ![image](https://user-images.githubusercontent.com/96399138/216997506-c5ef40dc-d4a0-4426-8c5a-60edda0c330b.png)
 
 <hr/>
-Presentación estructura para calcular el IMC: 
+<h3>Presentación estructura para calcular el IMC: </h3>
 
 
 ![image](https://user-images.githubusercontent.com/96399138/216998297-ba293364-fd7f-479c-9bca-1a1efaf082ab.png)
 
 <hr/>
-Video de la funcionalidad del programa:
+<h3>Video de la funcionalidad del programa:</h3>
 
 
 https://user-images.githubusercontent.com/96399138/217010242-a8d95154-9c8c-4cfc-9bbe-13a004d3e318.mp4
 
 <hr/>
-Codigo Mateo:
-https://github.com/Einarr07/Login_java.git 
+<footer>
+  <h3>Codigo Mateo:</h3>
+https://github.com/Einarr07/Login_java.git
+</footer>
+ 
