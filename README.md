@@ -15,7 +15,7 @@ JBUTTON: nos permite que al presionar sobre el crear algun uso o funcionalidad c
 JPASS: nos permite hashiar las claves o que lo que el usuario ingrese no se observe</br>
 
 <hr/>
-<h3>Presentación del login de inicio:</h3>
+<h3>Presentación del login:</h3>
 
 ![image](https://user-images.githubusercontent.com/96399138/216997506-c5ef40dc-d4a0-4426-8c5a-60edda0c330b.png)
 
