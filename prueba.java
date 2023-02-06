@@ -6,10 +6,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.text.DecimalFormat;
 
-public class prueba extends javax.swing.JFrame{
-    private JPanel panel1;
-
-
+public class prueba extends javax.swing.JFrame {
+    JPanel panel2;
     private JButton btncambio;
     private JLabel jlicono;
     private JRadioButton rbKg;
@@ -29,11 +27,13 @@ public class prueba extends javax.swing.JFrame{
     private JLabel txtte;
     private JLabel jlIMC;
     private JLabel jestatus;
-    private JMenuBar jmenu;
+    private JMenuBar menuBar1;
+    private JMenu jmenu2;
+    private JMenu historialMenu;
+    private JMenu salirMenu;
+    private JLabel lblnombre;
+    private JLabel jlclave;
     private JFileChooser jfchooser;
-
-
-
     private ImageIcon icon;
     private ImageIcon image;
     private  Image image1;
@@ -43,11 +43,25 @@ public class prueba extends javax.swing.JFrame{
     double cIMC;
     double fipeso;
     double fialtura;
+    double hpeso, haltura, jIMC;
 
 
+        String nombre;
+    char[] clave;
 
 
-    public prueba() {
+    public prueba(String nombre, char[] clave)  {
+        this.nombre=nombre;
+        lblnombre.setText(nombre);
+        this.clave=clave;
+        jlclave.setText(String.valueOf(clave));
+        this.hpeso=hpeso;
+        fipeso= Double.parseDouble(String.valueOf(hpeso));
+        this.haltura=haltura;
+        fialtura=Double.parseDouble(String.valueOf(haltura));
+        this.jIMC=jIMC;
+        jestatus.setText(String.valueOf(jIMC));
+
         ButtonGroup grupopeso = new ButtonGroup();
         grupopeso.add(rbKg);
         grupopeso.add(rbLb);
@@ -67,7 +81,7 @@ public class prueba extends javax.swing.JFrame{
                 if (respuesta == JFileChooser.APPROVE_OPTION) {
                     Ruta = jFileChooser.getSelectedFile().getPath();
                     Image mImagen = new ImageIcon(Ruta).getImage();
-                    ImageIcon mIcono = new ImageIcon(mImagen.getScaledInstance(200, 200, Image.SCALE_SMOOTH));
+                    ImageIcon mIcono = new ImageIcon(mImagen.getScaledInstance(300, 300, Image.SCALE_SMOOTH));
                     jlicono.setIcon(mIcono);
                 }
 
@@ -77,7 +91,7 @@ public class prueba extends javax.swing.JFrame{
             @Override
             public void componentResized(ComponentEvent e) {
                 Image mImagen = new ImageIcon(getClass().getResource("/imagenes/batman.jpeg")).getImage();
-                ImageIcon mIcono = new ImageIcon(mImagen.getScaledInstance(200, 200
+                ImageIcon mIcono = new ImageIcon(mImagen.getScaledInstance(300, 300
                         , Image.SCALE_SMOOTH));
 
                 jlicono.setIcon(mIcono);
@@ -121,6 +135,7 @@ public class prueba extends javax.swing.JFrame{
             }
         });
         Calculos.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 cIMC=fipeso/Math.pow(fialtura,2);
@@ -239,21 +254,18 @@ public class prueba extends javax.swing.JFrame{
         });
     total.addComponentListener(new ComponentAdapter() { } );
 
-    }
 
-
-    public static void main(String[] args) {
-                JFrame frame = new JFrame("Calculadora IMC");
-
-                frame.setContentPane(new prueba().panel1);
-                frame.setSize(250, 250);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.pack();
-                frame.setVisible(true);
-
-
+        salirMenu.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                System.exit(0);
             }
+        });
 
+
+
+    }
 
 
 }
